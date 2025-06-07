@@ -12,7 +12,7 @@ class Abonent {
     this.phoneNumber = opt.phoneNumber;
   }
   get info() {
-    return `Имя: ${this.name}, Телефон: ${this.phoneNumber}`;
+    return `Ім'я: ${this.name}, Телефон: ${this.phoneNumber}`;
   }
 }
 class PhoneBook {
