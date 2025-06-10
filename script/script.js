@@ -20,7 +20,7 @@ class PhoneBook {
     this.abonents = new Set();
   }
 
-  set addAbonent(abonent) {
+  addAbonent(abonent) {
     this.abonents.add(abonent);
   }
 
@@ -43,9 +43,9 @@ const olga = new Abonent({
   phoneNumber: 3801235489,
 });
 
-phoneBook.addAbonent = new Abonent(ivan);
-phoneBook.addAbonent = new Abonent(alex);
-phoneBook.addAbonent = new Abonent(olga);
+phoneBook.addAbonent(ivan);
+phoneBook.addAbonent(alex);
+phoneBook.addAbonent(olga);
 
 for (const abonent of phoneBook.list) {
   const p = document.createElement('p');
